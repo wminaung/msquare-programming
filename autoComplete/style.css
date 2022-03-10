@@ -1,0 +1,129 @@
+body {
+  background-color: #6a0136;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input {
+  width: 500px;
+  padding: 14px;
+  margin: 10px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 6px 6px 0 0;
+  border: none;
+  color: #001524;
+  font-weight: 400;
+}
+
+.productContainer {
+  width: 528px;
+  height: 500px;
+  overflow: scroll;
+}
+
+.productContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.productTitleAndImageContainer {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  align-items: center;
+}
+.productTitle {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.myImg {
+  width: 30px;
+  padding: 5px;
+}
+.selected {
+  background-color: blue;
+  color: white;
+}
+
+.s-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.s-title {
+  color: white;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.s-irHolder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.s-img {
+  width: 250px;
+  height: 350px;
+  border-radius: 22px;
+}
+
+.s-category {
+  background-color: #663399;
+  width: 60px;
+  height: 60px;
+  font-size: 13px;
+  line-height: 60px;
+  border: 12px solid #663399;
+  text-align: center;
+  border-radius: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  position: relative;
+}
+
+.s-category:hover {
+  width: 100px;
+  border-radius: 20%;
+}
+.s-category-a {
+  animation: category 3s linear;
+}
+
+.s-description {
+  background-color: #001111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.s-btn {
+  width: 30px;
+  cursor: pointer;
+}
+
+@keyframes category {
+  0% {
+    top: -600px;
+    transform: translateY(200px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(360deg);
+    background-color: red;
+    border-color: red;
+    top: 0;
+    right: 0;
+  }
+}

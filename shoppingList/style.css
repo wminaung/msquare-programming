@@ -1,0 +1,49 @@
+body {
+  background-color: rgba(107, 11, 107, 0.753);
+}
+
+#root {
+  margin: 0 auto;
+  width: 480px;
+}
+
+#inp {
+  margin-top: 40px;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px 10px 3px 3px;
+  font-size: 16px;
+  outline: none;
+}
+
+.shoppingListContainer {
+  margin-top: 10px;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.listContainer {
+  margin: 4px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.list {
+  background-color: #fff;
+  border-radius: 3px;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+.purchase {
+  text-decoration: line-through;
+}
+.fa-solid {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.fa-solid:hover {
+  color: red;
+}

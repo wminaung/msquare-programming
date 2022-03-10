@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Complete</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <input id="input" type="text" placeholder="search your product" autocomplete="off">
+        <div class="productContainer">
+        </div>
+    </div> -->
+
+
+    <div class="s-container">
+        <button class="s-btn" title="back to the auto complete">&lt;</button>
+        <div class="s-title">
+            <h1 class="s-h1"></h1>
+        </div>
+        <div class="s-irHolder">
+            <img src="" alt="img" class="s-img">
+            <div class="s-rating">
+                <h3 class="s-rate"></h3>
+                <h3 class="s-count"></h3>
+            </div>
+        </div>
+        <div class="s-category s-category-a" title="">
+
+        </div>
+        <div class="s-description ">
+
+        </div>
+    </div>
+
+
+    <script>
+        const h1Tag = document.querySelector(".s-h1")
+        const imgTag = document.querySelector(".s-img")
+        const rateTag = document.querySelector(".s-rate")
+        const countTag = document.querySelector(".s-count")
+        const categoryTag = document.querySelector(".s-category")
+        const descriptionTag = document.querySelector(".s-description");
+
+        const jsonString = localStorage.getItem('enterProductToshow')
+        const enterProductToshow = JSON.parse(jsonString)
+        console.log(enterProductToshow, "jsonstring")
+
+        h1Tag.textContent = enterProductToshow.title;
+        imgTag.src = enterProductToshow.image;
+        rateTag.textContent = enterProductToshow.rating.rate;
+        countTag.textContent = enterProductToshow.rating.count;
+        categoryTag.textContent = enterProductToshow.category;
+        categoryTag.title = enterProductToshow.category;
+        descriptionTag.textContent = enterProductToshow.description;
+
+
+        const btnTag = document.querySelector(".s-btn")
+
+        btnTag.addEventListener("click", () => {
+            window.location.href = "./index.html";
+            localStorage.clear();
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

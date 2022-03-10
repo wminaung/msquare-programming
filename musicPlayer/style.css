@@ -1,0 +1,72 @@
+body {
+  background-color: #ee9b00;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#root {
+  color: #d8f3dc;
+  background-color: #081c15;
+  border-radius: 5px;
+}
+
+.trackHolder {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  background-color: #1b4332;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.trackHolder:hover {
+  background-color: #081c15;
+}
+
+.time {
+  margin: 10px;
+}
+
+#progressBar {
+  width: 500px;
+  height: 4px;
+  margin: 5px;
+  background-color: #d8f3dc;
+}
+#currentProgress {
+  width: 0px;
+  height: 100%;
+  background-color: red;
+}
+.musicPlayer {
+  margin-top: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.fa-solid {
+  font-size: 44px;
+  cursor: pointer;
+  color: #081c15;
+  transition: all 0.1s ease-in-out;
+}
+.fa-solid:hover {
+  color: #1b4332;
+}
+
+.time {
+  color: white;
+}
+
+.dn {
+  display: none !important;
+}

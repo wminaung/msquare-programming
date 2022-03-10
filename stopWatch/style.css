@@ -1,0 +1,27 @@
+body {
+  background-color: #202940;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stopWatch {
+  font-size: 180px;
+  font-weight: bold;
+  color: #e5b65d;
+}
+
+.milis {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0dfd5;
+  background-color: #f06543;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+button {
+  margin: 10px;
+}
